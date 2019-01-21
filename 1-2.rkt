@@ -1,0 +1,5 @@
+#lang sicp
+
+;; Transalate given expression to prefix
+(/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5)))))
+   (* 3 (- 6 2) (- 7 2)))
