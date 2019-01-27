@@ -21,4 +21,4 @@
   (< (abs(- (square guess) x)) 0.001))
 
 (define (better-good-enough? guess prevguess)
-  (< (abs(- guess prevguess)) (/ guess 10000)))
+  (< (abs(- guess prevguess)) (* guess 0.001)))
