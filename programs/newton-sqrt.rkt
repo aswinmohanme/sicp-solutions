@@ -1,6 +1,9 @@
 #lang sicp
 (#%require "../sicp-library.rkt")
 
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
+
 ;;; Square Root of a number by approximation
 (define (sqrt-iter guess x)
   (if (good-enough? guess x)
